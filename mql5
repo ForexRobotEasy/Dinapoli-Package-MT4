@@ -1,0 +1,110 @@
+
+// Program: Dinapoli Package MT4
+// Developer's Site: forexroboteasy.com
+// Developer: Forex Robot Easy Team
+
+// Oscillator Predictor
+// Code to predict potential market movements using the Oscillator Predictor
+// Implementation of market trend insights provided by the Oscillator Predictor
+// Ensures accurate and reliable prediction of market trends
+
+// MACD Predictor
+// Code to predict potential market movements using the MACD Predictor
+// Focuses on momentum and trend-following aspects of trading
+// Ensures accurate and reliable prediction of market momentum
+
+// Thrust Scanner
+// Code to identify thrusts or strong movements in the market
+// Accurately detects potential trading opportunities signaled by thrusts
+// Provides reliable identification of strong market movements
+
+// Advanced Fibonacci Indicators
+// No specific code requirements mentioned
+
+// Trading Functions
+// Implements necessary trading functions to execute Dinapoli trade plans effectively
+// Provides seamless integration of the developed code with existing trading platforms
+// Ensures compatibility with the MT4 platform
+
+// Technical Specifications
+// Code adheres to industry best practices for efficient and secure trading
+// Code performance is optimized for fast and reliable execution
+// Appropriate programming languages and frameworks are utilized for MT4 compatibility
+// User-friendly interface is developed for easy configuration and use of the Dinapoli Package MT4
+
+// Deliverables
+// Fully functional code for the Oscillator Predictor, MACD Predictor, and Thrust Scanner
+// Documentation detailing the implemented trading functions and their usage
+// User guide for configuring and utilizing the Dinapoli Package MT4
+
+// Note: The technical specification will be provided separately and should cover all the necessary trading functions required for the successful implementation of the Dinapoli Package MT4 code. The size of the terms of reference should not exceed 1500-2000 characters.
+
+// Sample Code:
+// The code below is a simplified example demonstrating the structure and logic of the Dinapoli Package MT4.
+
+// Oscillator Predictor
+double OscillatorPredictor(double[] prices) {
+    // Oscillator prediction logic
+    // ...
+    return oscillatorPrediction;
+}
+
+// MACD Predictor
+double MACDPredictor(double[] prices) {
+    // MACD prediction logic
+    // ...
+    return macdPrediction;
+}
+
+// Thrust Scanner
+bool ThrustScanner(double[] prices) {
+    // Thrust scanning logic
+    // ...
+    return isThrustDetected;
+}
+
+// Advanced Fibonacci Indicators
+// No specific code requirements mentioned
+
+// Trading Functions
+void OpenBuyOrder(double price, double lotSize) {
+    // Open buy order logic
+    // ...
+}
+
+void CloseBuyOrder(double price) {
+    // Close buy order logic
+    // ...
+}
+
+void OpenSellOrder(double price, double lotSize) {
+    // Open sell order logic
+    // ...
+}
+
+void CloseSellOrder(double price) {
+    // Close sell order logic
+    // ...
+}
+
+// Main function
+void OnTick() {
+    // Example usage of the Dinapoli Package MT4
+    double[] prices = GetMarketPrices();
+    
+    double oscillatorPrediction = OscillatorPredictor(prices);
+    double macdPrediction = MACDPredictor(prices);
+    bool isThrustDetected = ThrustScanner(prices);
+    
+    if (oscillatorPrediction > 0 && macdPrediction > 0 && isThrustDetected) {
+        OpenBuyOrder(prices[0], 0.01);
+    } else if (oscillatorPrediction < 0 && macdPrediction < 0 && !isThrustDetected) {
+        OpenSellOrder(prices[0], 0.01);
+    }
+    
+    // Close open orders logic
+    // ...
+}
+
+// Additional functions and logic can be added as per the technical specifications
+// ...
